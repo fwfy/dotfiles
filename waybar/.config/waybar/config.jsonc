@@ -1,0 +1,35 @@
+{
+	"layer": "top",
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-right": ["tray", "network", "cpu", "load", "battery"],
+	"modules-center": ["clock"],
+	"height": 20,
+	"sway/mode": {
+		
+	},
+	"tray": {
+		"spacing": 10
+	},
+	"battery": {
+		"format": "{capacity}% {power} W",
+		"interval": 5
+	},
+	"network": {
+		"format-wifi": " {essid} ({signalStrength}%)",
+		"format-ethernet": " {ipaddr}/{cidr}",
+		"tooltip-format": "{ipaddr}/{cidr} via {gwaddr}\n {bandwidthDownBytes}  {bandwidthUpBytes}"
+	},
+	"cpu": {
+		"min-length": 5,
+		"interval": 1
+	},
+	"load": {
+		"min-length": 5,
+		"interval": 1
+	},
+	"clock": {
+		"format": "{:%A, %B %d | %I:%M:%S %p}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"interval": 1
+	}
+}
