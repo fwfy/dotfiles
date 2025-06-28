@@ -40,7 +40,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 ### Daemons
 exec swaync
 exec swayosd-server
-exec albert
+exec_always albert
 
 bar swaybar_command waybar
 
