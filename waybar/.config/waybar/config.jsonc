@@ -20,7 +20,8 @@
 		"tooltip-format": "{ipaddr}/{cidr} via {gwaddr}\n {bandwidthDownBytes}  {bandwidthUpBytes}"
 	},
 	"cpu": {
-		"min-length": 5,
+		"format": " {usage}%",
+		"min-length": 8,
 		"interval": 1
 	},
 	"load": {
