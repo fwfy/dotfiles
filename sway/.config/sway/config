@@ -87,18 +87,18 @@ bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
 bindsym $mod+3 workspace number 3
 bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number q
-bindsym $mod+6 workspace number w
-bindsym $mod+7 workspace number e
-bindsym $mod+8 workspace number r
+bindsym $mod+Alt+1 workspace A1
+bindsym $mod+Alt+2 workspace A2
+bindsym $mod+Alt+3 workspace A3
+bindsym $mod+Alt+4 workspace A4
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
 bindsym $mod+Shift+3 move container to workspace number 3
 bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number q
-bindsym $mod+Shift+6 move container to workspace number w
-bindsym $mod+Shift+7 move container to workspace number e
-bindsym $mod+Shift+8 move container to workspace number r
+bindsym $mod+Shift+Alt+1 move container to workspace A1
+bindsym $mod+Shift+Alt+2 move container to workspace A2
+bindsym $mod+Shift+Alt+3 move container to workspace A3
+bindsym $mod+Shift+Alt+4 move container to workspace A4
 bindsym $mod+b splith
 bindsym $mod+v splitv
 bindsym $mod+s layout stacking
@@ -129,16 +129,18 @@ bindsym $mod+r mode "resize"
 #
 # Utilities:
 #
-    # Special keys to adjust volume via PulseAudio
-    bindsym --locked XF86AudioMute exec swayosd-client --output-volume=mute-toggle
-    bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume=lower
-    bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume=raise
-    bindsym --locked XF86AudioMicMute exec swayosd-client --input-volume=mute-toggle
-    # Special keys to adjust brightness via brightnessctl
-    bindsym --locked XF86MonBrightnessDown exec swayosd-client --brightness=lower
-    bindsym --locked XF86MonBrightnessUp exec swayosd-client --brightness=raise
-    # Special key to take a screenshot with grim
-    # bindsym Print exec grim
+# Special keys to adjust volume via PulseAudio
+bindsym --locked XF86AudioMute exec swayosd-client --output-volume=mute-toggle
+bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume=lower
+bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume=raise
+bindsym --locked XF86AudioMicMute exec swayosd-client --input-volume=mute-toggle
+# Special keys to adjust brightness via brightnessctl
+bindsym --locked XF86MonBrightnessDown exec swayosd-client --brightness=lower
+bindsym --locked $mod+Alt+9 exec swayosd-client --brightness=lower
+bindsym --locked XF86MonBrightnessUp exec swayosd-client --brightness=raise
+bindsym --locked $mod+Alt+0 exec swayosd-client --brightness=raise
+# Special key to take a screenshot with grim
+# bindsym Print exec grim
 
 #
 # Status Bar:
