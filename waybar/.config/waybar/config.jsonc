@@ -1,9 +1,12 @@
 {
 	"layer": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
-	"modules-right": ["tray", "network", "cpu", "load", "battery"],
+	"modules-right": ["tray", "network", "cpu", "temperature", "load", "battery"],
 	"modules-center": ["clock"],
 	"height": 20,
+	"temperature": {
+		"critical-threshold": 75
+	},
 	"sway/mode": {
 		
 	},
@@ -11,7 +14,7 @@
 		"spacing": 10
 	},
 	"battery": {
-		"format": "{capacity}% {power} W",
+		"format": "{capacity}% {power:<} W",
 		"interval": 5
 	},
 	"network": {
