@@ -60,7 +60,7 @@ bindsym Print exec grim -g "$(slurp)" - | wl-copy
 bindsym Control+Alt+Page_Up exec swayosd-client --playerctl=next
 bindsym Control+Alt+Page_Down exec swayosd-client --playerctl=previous
 bindsym Control+Alt+End exec swayosd-client --playerctl=play-pause
-bindsym $mod+l exec swaylock -f
+bindsym $mod+l exec swaylock -f -c 000000
 bindsym $mod+shift+b exec bluetoothctl connect AC:80:FB:EB:85:BC
 bindsym $mod+shift+p exec alacritty -e pulsemixer
 bindsym $mod+shift+n exec alacritty -e nmtui
