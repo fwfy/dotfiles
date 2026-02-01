@@ -20,8 +20,8 @@ exec swayidle -w \
     before-sleep 'swaylock -f -c 000000'
 
 ### SwayFX-specific effect configuration:
-blur enable
-layer_effects "panel" blur enable
+# blur enable
+# layer_effects "panel" blur enable
 
 ### Input configuration
 
