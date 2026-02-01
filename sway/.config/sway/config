@@ -37,6 +37,10 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 	tap enabled
 }
 
+input "1739:52913:SYNA7DB5:00_06CB:CEB1_Touchpad" {
+	tap enabled
+}
+
 ### Daemons
 exec swaync
 exec swayosd-server
