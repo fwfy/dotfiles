@@ -25,21 +25,9 @@ exec swayidle -w \
 
 ### Input configuration
 
-input "1133:45082:MX_Anywhere_2S_Mouse" {
-	accel_profile "flat"
-}
+input type:mouse accel_profile flat
+input type:touchpad tap enabled
 
-input "2:10:TPPS/2_IBM_TrackPoint" {
-	accel_profile "flat"
-}
-
-input "2:7:SynPS/2_Synaptics_TouchPad" {
-	tap enabled
-}
-
-input "1739:52913:SYNA7DB5:00_06CB:CEB1_Touchpad" {
-	tap enabled
-}
 
 ### Daemons
 exec swaync
