@@ -28,6 +28,8 @@ exec swayidle -w \
 input type:mouse accel_profile flat
 input type:touchpad tap enabled
 
+# fix for swaywm/sway#8758
+input type:touchpad drag_lock disable
 
 ### Daemons
 exec swaync
