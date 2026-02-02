@@ -14,7 +14,7 @@
 		"spacing": 10
 	},
 	"battery": {
-		"format": "{capacity}% {power:<} W",
+		"format": "{capacity}% {power:.3} W",
 		"interval": 5
 	},
 	"network": {
