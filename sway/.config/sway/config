@@ -161,3 +161,6 @@ bindsym --locked $mod+Alt+0 exec swayosd-client --brightness=raise
 #}
 
 include /etc/sway/config.d/*
+
+# Import host-specific configuration overrides.
+include ~/.sway_hostcfg
