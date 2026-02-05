@@ -6,7 +6,7 @@ set $menu rofi -show drun
 
 ### Output configuration
 
-output * bg /usr/share/wallpapers/ScarletTree/contents/images_dark/5120x2880.png fill
+output * bg /usr/share/wallpapers/DarkestHour/contents/images/1920x1080.jpg fill
 
 output DP-1 {
 	mode 1920x1080@165.003Hz
@@ -42,7 +42,7 @@ bar swaybar_command waybar
 ### Appearance
 #
 #client.<class>	<border>	<background>	<text>		<indicator>	<child_border> 
-client.focused	"#8800cc"	"#aa00ee99"	"#FFFFFF"	#ee00ee		#8800cc
+client.focused	"#0000CC"	"#0000ee99"	"#FFFFFF"	#0000EE		#0000CC
 
 
 ### Key bindings
