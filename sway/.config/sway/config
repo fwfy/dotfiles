@@ -32,6 +32,7 @@ input type:touchpad tap enabled
 input type:touchpad drag_lock disable
 
 ### Daemons
+exec keepassxc
 exec swaync
 exec swayosd-server
 exec lxpolkit
