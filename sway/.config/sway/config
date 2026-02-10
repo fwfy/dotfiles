@@ -35,6 +35,7 @@ input type:touchpad drag_lock disable
 exec swaync
 exec swayosd-server
 exec lxpolkit
+exec nm-applet
 
 bar swaybar_command waybar
 
