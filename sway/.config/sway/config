@@ -64,6 +64,7 @@ bindgesture pinch:inward+up move up
 bindgesture pinch:inward+down move down
 bindgesture pinch:inward+left move left
 bindgesture pinch:inward+right move right
+bindsym $mod+Alt+S exec swaynag -t warning -m 'Would you like to shut down this device?' -B 'Confirm Shutdown' 'systemctl poweroff'
 
 #
 # Basics:
