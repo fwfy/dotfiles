@@ -15,7 +15,8 @@
 	},
 	"battery": {
 		"format": "{capacity}% {power:.3} W",
-		"interval": 5
+		"interval": 5,
+		"min-length": 11
 	},
 	"network": {
 		"format-wifi": " {essid} ({signalStrength}%)",
